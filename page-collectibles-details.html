@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#222032"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>پرامپتی فای</title>
+    <meta name="description" content=" پرامپت  " />
+    <meta name="keywords" content="" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/icon-32x32.png"
+      sizes="32x32"
+    />
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="images/favicon/icon-96x96.png" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendors/zuck_stories/zuck.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+  </head>
+
+  <body>
+    <!-- ===================================
+      START LODAER PAGE
+    ==================================== -->
+    <section class="loader-page" id="loaderPage">
+      <div class="spinner_flash"></div>
+    </section>
+    <!-- START WRAPPER -->
+    <div id="wrapper">
+      <!-- START CONTENT -->
+      <div id="content">
+        <!-- ===================================
+              START THE HEADER
+            ==================================== -->
+        <header class="default heade-sticky">
+          <div class="un-title-page go-back">
+            <a href="javascript:history.back()" class="icon">
+              <i class="ri-arrow-drop-right-line"></i>
+            </a>
+          </div>
+          <div class="un-block-right">
+            <div class="btn-like-click shape-box">
+              <div class="btnLike">
+                <input type="checkbox" />
+                <span class="count-likes">10.1 هزار</span>
+                <div class="icon-inside">
+                  <i class="ri-heart-3-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- ===================================
+              START THE SPACE STICKY
+            ==================================== -->
+        <div class="space-sticky"></div>
+        <!-- ===================================
+              START THE ACTIIVITY PAGE
+            ==================================== -->
+        <section class="un-details-collectibles">
+          <div class="head">
+            <div class="cover-main-img">
+              <picture>
+                <source
+                  srcset="
+                    https://promptall.ir/wp-content/uploads/elementor/thumbs/%DB%B2%DB%B7%DB%B7-copy-rbqtrk22t1w9ucdrf7sjp4fc9egc5obdvc5n8xq3wg.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="img-full"
+                  src="https://promptall.ir/wp-content/uploads/elementor/thumbs/%DB%B2%DB%B7%DB%B7-copy-rbqtrk22t1w9ucdrf7sjp4fc9egc5obdvc5n8xq3wg.webp"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div
+              class="title-card-text d-flex align-items-center justify-content-between"
+            >
+              <div class="text">
+                <h1>تصویر هنری</h1>
+              </div>
+              <span class="btn-xs-size bg-pink text-white rounded-pill"
+                >هنری</span
+              >
+            </div>
+            <div class="txt-price-coundown d-flex justify-content-between">
+              <div class="price">
+                <h2>قیمت</h2>
+                <p>7,000<span class="size-16">تومان</span></p>
+              </div>
+              <div class="coundown">
+                <h3>تعداد تصویر ساخته شده تا کنون</h3>
+                <span> 9,245 </span>
+              </div>
+            </div>
+            <div class="content container margin-t-20">
+              <a href="#contet" class="btn btn-bid-items visited w-100">
+                <p>ادامه</p>
+                <div class="ico"><i class="ri-arrow-drop-left-line"></i></div>
+              </a>
+            </div>
+          </div>
+          <div class="body">
+            <div class="description">
+              <p>
+                توضیحات : ابتدا برای ساخت این تصویر تصویر صورت خود را به طور
+                واضح بارگذاری کنید.
+                <br />
+                سپس روی دکمه "ساخت این تصویر" بزنید و نتیجه را دانلود کنید
+              </p>
+            </div>
+            <div class="un-create-collectibles bg-white">
+              <div id="contet" class="form-group upload-form">
+                <h2>بارگذاری فایل</h2>
+                <p>فایل خود را برای بارگذاری انتخاب کنید</p>
+                <div class="upload-input-form">
+                  <input type="file" id="fileInput" />
+                  <div class="content-input" id="previewBox">
+                    <div class="icon"><i class="ri-upload-cloud-line"></i></div>
+                    <span> حداکثر حجم : 5 مگابایت </span>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                name="mdllOtherOpen"
+                aria-label="mdllOtherOpen"
+                class="btn btn-bid-items visited w-100 text-white justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#mdllOtherOpen"
+                aria-label="btnNavigation"
+              >
+                ساخت این تصویر
+              </button>
+              <div class="upload-input-form margin-t-20">
+                <div class="content-input" id="previewBox">
+                  <div class="icon">
+                    <div class="loader-items" style="direction: ltr">
+                      <div class="lds-spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <span> محل قرارگیری تصویر تولید شده </span>
+                </div>
+              </div>
+              <div class="item-card-gradual margin-t-20">
+                <a
+                  href="images/other/26.webp"
+                  download=""
+                  class="body-card visited"
+                >
+                  <div class="cover-nft">
+                    <picture>
+                      <source srcset="images/other/26.webp" type="image/webp" />
+                      <img
+                        class="img-cover"
+                        src="images/other/26.webp"
+                        alt="تصویر "
+                      />
+                    </picture>
+                    <div class="icon-type">
+                      <i class="ri-download-line"> </i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div
+      class="modal transition-bottom screenFull defaultModal mdlladd__rate fade"
+      id="mdllOtherOpen"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0"></div>
+          <div class="modal-body pt-0">
+            <div class="content-alert-actions">
+              <div class="margin-b-20">
+                <h2>آیا با کسر مبلغ 7,000 تومان موافق هستید؟</h2>
+              </div>
+
+              <div class="action-links">
+                <button
+                  type="button"
+                  class="btn border color-text rounded-pill margin-l-20 col-4"
+                  data-bs-dismiss="modal"
+                >
+                  لغو
+                </button>
+                <a
+                  href="javascript: void(0)"
+                  class="btn bg-primary text-white rounded-pill col-6"
+                >
+                  تایید
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <div class="env-pb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================
+      START THE MODAL ADD ETH
+    ==================================== -->
+    <div
+      class="modal transition-bottom screenFull defaultModal mdlladd__rate fade"
+      id="mdllAddETH"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="title-modal">افزایش موجودی کیف پول</h1>
+            <button
+              type="button"
+              class="btn btnClose"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-fill"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-upload-item">
+              <p class="text-center">برای افزایش موجودی کیف پول اقدام کنید</p>
+              <div class="un-navMenu-default margin-t-30 p-0">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-3">
+                    <a class="nav-link effect-click" href="page-my-wallet.html">
+                      <div class="item-content-link">
+                        <div class="icon color-text w-auto">
+                          <i class="ri-exchange-box-line"></i>
+                        </div>
+                        <h3 class="link-title">افزایش موجودی</h3>
+                      </div>
+                      <div class="other-cc">
+                        <span class="badge-text"></span>
+                        <div class="icon-arrow">
+                          <i class="ri-arrow-drop-left-line"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <div class="env-pb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================
+      START STATUS CONNECTION
+    ==================================== -->
+    <div class="d-flex justify-content-center">
+      <div
+        class="toast status-connection"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </div>
+
+    <!-- JS FILES -->
+    <script src="assets/vendors/zuck_stories/zuck.min.js"></script>
+    <script src="assets/vendors/smoothscroll/smoothscroll.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/nouislider/wNumb.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
+    <script src="assets/js/pwa-services.js"></script>
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const previewBox = document.getElementById("previewBox");
+
+      fileInput.addEventListener("change", function () {
+        const file = this.files[0];
+        if (!file) return;
+
+        // قبل از نمایش فایل جدید، محتویات قبلی پاک می‌شوند
+        previewBox.innerHTML = "";
+
+        if (file.type.startsWith("image/")) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewBox.innerHTML = `<img src="${e.target.result}" style="max-width:100%; border-radius:8px;" />`;
+          };
+          reader.readAsDataURL(file);
+        } else if (file.type.startsWith("video/")) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewBox.innerHTML = `<video controls style="max-width:100%; border-radius:8px;">
+                                  <source src="${e.target.result}" type="${file.type}">
+                                </video>`;
+          };
+          reader.readAsDataURL(file);
+        } else if (file.type.startsWith("audio/")) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewBox.innerHTML = `<audio controls>
+                                  <source src="${e.target.result}" type="${file.type}">
+                                </audio>`;
+          };
+          reader.readAsDataURL(file);
+        } else {
+          previewBox.innerHTML = `<p>این فایل قابل پیش‌نمایش نیست.</p>`;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#222032"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>پرامپتی فای</title>
+    <meta name="description" content=" پرامپت  " />
+    <meta name="keywords" content="" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/icon-32x32.png"
+      sizes="32x32"
+    />
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="images/favicon/icon-96x96.png" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendors/zuck_stories/zuck.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+  </head>
+
+  <body>
+    <!-- ===================================
+      START LODAER PAGE
+    ==================================== -->
+    <section class="loader-page" id="loaderPage">
+      <div class="spinner_flash"></div>
+    </section>
+    <!-- START WRAPPER -->
+    <div id="wrapper">
+      <div id="content">
+        <header class="default heade-sticky">
+          <div class="un-title-page go-back">
+            <a href="javascript:history.back()" class="icon visited"
+              ><i class="ri-arrow-drop-right-line"></i
+            ></a>
+            <h1>پروفایل</h1>
+          </div>
+          <div class="un-block-right">
+            <!-- menu-sidebar -->
+            <div class="menu-sidebar">
+              <button
+                type="button"
+                name="sidebarMenu"
+                aria-label="sidebarMenu"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#mdllSidebar-connected"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="9.3"
+                  viewBox="0 0 19 9.3"
+                >
+                  <g
+                    id="Group_8081"
+                    data-name="Group 8081"
+                    transform="translate(-329 -37)"
+                  >
+                    <rect
+                      id="Rectangle_3986"
+                      data-name="Rectangle 3986"
+                      width="19"
+                      height="2.3"
+                      rx="1.15"
+                      transform="translate(329 37)"
+                      fill="#222032"
+                    />
+                    <rect
+                      id="Rectangle_3987"
+                      data-name="Rectangle 3987"
+                      width="19"
+                      height="2.3"
+                      rx="1.15"
+                      transform="translate(329 44)"
+                      fill="#222032"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="space-sticky"></div>
+        <section class="un-my-account">
+          <div class="head">
+            <div class="my-personal-account">
+              <div class="user">
+                <picture>
+                  <source
+                    srcset="images/avatar/ab-circle-img.png"
+                    type="image/webp"
+                  />
+                  <img src="images/avatar/ab-circle-img.png" alt="" />
+                </picture>
+                <div class="txt-user">
+                  <h1>طاها نعمتی</h1>
+                </div>
+              </div>
+              <button type="button" class="btn btn-copy-address">
+                <input type="checkbox" />
+                <div class="icon-box">
+                  <i class="ri-star-line"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="body">
+            <div class="my-balance-text">
+              <h2>موجودی من</h2>
+              <p>3,650 تومان</p>
+              <button
+                type="button"
+                class="btn btn-md-size effect-click border-primary rounded-pill text-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#mdllAddETH"
+              >
+                افزودن موجودی
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="un-navMenu-default without-visit">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="page-edit-profile.html">
+                <div class="item-content-link">
+                  <div class="icon bg-orange-1 color-orange">
+                    <i class="ri-user-3-line"></i>
+                  </div>
+                  <h3 class="link-title">ویرایش پروفایل</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text"></span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="downloads.html">
+                <div class="item-content-link">
+                  <div class="icon bg-blue-1 color-blue">
+                    <i class="ri-landscape-line"></i>
+                  </div>
+                  <h3 class="link-title">دانلود ها</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text"></span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-help.html">
+                <div class="item-content-link">
+                  <div class="icon bg-pink-1 color-pink">
+                    <i class="ri-file-list-2-line"></i>
+                  </div>
+                  <h3 class="link-title">پشتیبانی</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text"></span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <div class="sub-title-pkg">
+              <h2>تنظیمات</h2>
+            </div>
+            <li class="nav-item">
+              <div class="nav-link">
+                <div class="item-content-link">
+                  <div class="txt">
+                    <h3 class="link-title">حالت تاریک</h3>
+                    <p class="size-11 color-text m-0">مرور در حالت شب</p>
+                  </div>
+                </div>
+                <div class="other-cc">
+                  <label
+                    class="switch_toggle toggle_lg theme-switch"
+                    for="switchDark"
+                  >
+                    <input
+                      type="checkbox"
+                      class="switchDarkMode theme-switch"
+                      id="switchDark"
+                      aria-describedby="switchDark"
+                      aria-label="switchDark"
+                    />
+                    <span class="handle"></span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-activity.html">
+                <div class="item-content-link">
+                  <div class="icon bg-red-1 color-red">
+                    <i class="ri-notification-line"></i>
+                  </div>
+                  <h3 class="link-title">اعلانات</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text"></span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <div class="sub-title-pkg">
+              <h2>درباره</h2>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="page-about.html">
+                <div class="item-content-link">
+                  <div class="icon bg-blue-1 color-blue">
+                    <i class="ri-information-line"></i>
+                  </div>
+                  <h3 class="link-title">درباره ما.</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text"></span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <div class="sub-title-pkg">
+              <h2>ما دلتنگتان خواهیم شد</h2>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <div class="item-content-link">
+                  <div class="icon bg-snow text-dark">
+                    <i class="ri-logout-box-r-line"></i>
+                  </div>
+                  <h3 class="link-title">خروج</h3>
+                </div>
+                <div class="other-cc">
+                  <span class="badge-text size-18">😟</span>
+                  <div class="icon-arrow">
+                    <i class="ri-arrow-drop-left-line"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright-mark">
+          <div class="content">
+            <img class="logo-gray" src="images/logo-gray.svg" alt="لوگو" />
+            <p>حق نشر © پرامپتی فای 2025</p>
+          </div>
+        </section>
+      </div>
+      <footer class="un-bottom-navigation filter-blur">
+        <div class="em_body_navigation border-0 -active-links border">
+          <div class="item_link passtive">
+            <a
+              href="index.html"
+              class="btn btn_navLink"
+              aria-label="btnNavigation"
+            >
+              <div class="icon_current">
+                <i class="ri-home-5-line"></i>
+              </div>
+              <div class="icon_active">
+                <i class="ri-home-5-fill"></i>
+              </div>
+            </a>
+          </div>
+          <div class="item_link">
+            <a
+              href="category.html"
+              class="btn btn_navLink"
+              aria-label="btnNavigation"
+            >
+              <div class="icon_current">
+                <i class="ri-search-2-line"></i>
+              </div>
+              <div class="icon_active">
+                <i class="ri-search-2-fill"></i>
+              </div>
+            </a>
+          </div>
+          <div class="item_link">
+            <button
+              type="button"
+              name="uploadItem"
+              aria-label="uploadItem"
+              class="btn btn_navLink without_active"
+              data-bs-toggle="modal"
+              data-bs-target="#mdllAddETH"
+              aria-label="btnNavigation"
+            >
+              <div class="btn btnCircle_default">
+                <i class="ri-add-line"></i>
+              </div>
+            </button>
+          </div>
+          <div class="item_link">
+            <a
+              href="page-favourit-random.html"
+              class="btn btn_navLink"
+              aria-label="btnNavigation"
+            >
+              <div class="icon_current">
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="icon_active">
+                <i class="ri-heart-3-fill"></i>
+              </div>
+            </a>
+          </div>
+          <div class="item_link">
+            <a
+              href="page-account.html"
+              class="btn btn_navLink"
+              aria-label="btnNavigation"
+            >
+              <div class="icon_current">
+                <i class="ri-user-4-line"></i>
+              </div>
+              <div class="icon_active">
+                <i class="ri-user-4-fill"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ===================================
+      START THE MODAL ADD ETH
+    ==================================== -->
+    <div
+      class="modal transition-bottom screenFull defaultModal mdlladd__rate fade"
+      id="mdllAddETH"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="title-modal">افزایش موجودی کیف پول</h1>
+            <button
+              type="button"
+              class="btn btnClose"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-fill"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-upload-item">
+              <p class="text-center">برای افزایش موجودی کیف پول اقدام کنید</p>
+              <div class="un-navMenu-default margin-t-30 p-0">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-3">
+                    <a class="nav-link effect-click" href="page-my-wallet.html">
+                      <div class="item-content-link">
+                        <div class="icon color-text w-auto">
+                          <i class="ri-exchange-box-line"></i>
+                        </div>
+                        <h3 class="link-title">افزایش موجودی</h3>
+                      </div>
+                      <div class="other-cc">
+                        <span class="badge-text"></span>
+                        <div class="icon-arrow">
+                          <i class="ri-arrow-drop-left-line"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <div class="env-pb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================
+      START THE MODAL SIDEBAR MENU - CONNECTED
+    ==================================== -->
+    <div
+      class="modal sidebarMenu -left fade"
+      id="mdllSidebar-connected"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header d-block pb-1">
+            <!-- un-user-profile -->
+            <div class="un-user-profile">
+              <div class="image_user">
+                <picture>
+                  <source
+                    srcset="images/avatar/ab-circle-img.png"
+                    type="image/webp"
+                  />
+                  <img src="images/avatar/ab-circle-img.png" alt="image" />
+                </picture>
+              </div>
+              <div class="text-user">
+                <h3>طاها نعمتی</h3>
+                <p><span> 165 </span> تصویر درست کردید!</p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btnClose"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-fill"></i>
+            </button>
+
+            <!-- cover-balance -->
+            <div class="cover-balance">
+              <div class="un-balance">
+                <div class="content-balance">
+                  <div class="head-balance">
+                    <h4>موجودی من</h4>
+                  </div>
+                  <p class="no-balance"><span> 40,000 </span> تومان</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-sm-size bg-white text-dark rounded-pill"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+                data-bs-target="#mdllAddETH"
+              >
+                افزایش
+              </button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <ul class="nav flex-column -active-links">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <div class="icon_current">
+                    <i class="ri-compass-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-compass-fill"></i>
+                  </div>
+                  <span class="title_link"> صفحه اصلی </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="single-category.html">
+                  <div class="icon_current">
+                    <i class="ri-layout-2-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-layout-2-fill"></i>
+                  </div>
+                  <span class="title_link"> همه پرامپت ها </span>
+
+                  <span class="xs-badge">+9,100</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="downloads.html">
+                  <div class="icon_current">
+                    <i class="ri-pages-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-pages-fill"></i>
+                  </div>
+                  <span class="title_link"> دانلود ها </span>
+
+                  <div class="badge-circle">
+                    <span class="doted_item"></span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                  <div class="icon_current">
+                    <i class="ri-file-info-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-file-info-fill"></i>
+                  </div>
+                  <span class="title_link"> درباره ما </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="page-activity.html">
+                  <div class="icon_current">
+                    <i class="ri-notification-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-notification-line"></i>
+                  </div>
+                  <span class="title_link"> اعلانات </span>
+                  <div class="badge-circle">
+                    <span class="doted_item"></span>
+                  </div>
+                </a>
+              </li>
+
+              <label class="title__label">سایر</label>
+
+              <li class="nav-item">
+                <a href="page-signin.html" class="nav-link">
+                  <div class="icon_current">
+                    <i class="ri-logout-box-r-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-logout-box-r-fill"></i>
+                  </div>
+                  <span class="title_link">خروج از سیستم</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="em_darkMode_menu">
+              <label class="text" for="switchDark">
+                <h3>حالت تاریک</h3>
+                <p>مرور در حالت شب</p>
+              </label>
+              <label
+                class="switch_toggle toggle_lg theme-switch"
+                for="switchDark"
+              >
+                <input
+                  type="checkbox"
+                  class="switchDarkMode theme-switch"
+                  id="switchDark"
+                  aria-describedby="switchDark"
+                />
+                <span class="handle"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================
+      START THE MODAL SIDEBAR MENU - guest
+    ==================================== -->
+    <div
+      class="modal sidebarMenu -left -guest fade"
+      id="mdllSidebar-guest"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="welcome_em">
+              <h2>به پرامپتی فای<span>.</span> خوش آمدید</h2>
+              <p>تصویر ها را مرور و بسازید!</p>
+            </div>
+            <button
+              type="button"
+              class="btn btnClose"
+              data-bs-dismiss="modal"
+              aria-label="بستن"
+            >
+              <i class="ri-close-fill"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav flex-column -active-links">
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-md-size bg-primary justify-content-center"
+                  href="page-create-account.html"
+                >
+                  <span class="text-white"> ثبت نام / ورود </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <div class="icon_current">
+                    <i class="ri-compass-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-compass-fill"></i>
+                  </div>
+                  <span class="title_link"> صفحه اصلی </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="single-category.html">
+                  <div class="icon_current">
+                    <i class="ri-layout-2-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-layout-2-fill"></i>
+                  </div>
+                  <span class="title_link"> همه پرامپت ها </span>
+
+                  <span class="xs-badge">+9,100</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                  <div class="icon_current">
+                    <i class="ri-file-info-line"></i>
+                  </div>
+                  <div class="icon_active">
+                    <i class="ri-file-info-fill"></i>
+                  </div>
+                  <span class="title_link"> درباره ما </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="em_darkMode_menu">
+              <label class="text" for="switchDark">
+                <h3>حالت تاریک</h3>
+                <p>مرور در حالت شب</p>
+              </label>
+              <label
+                class="switch_toggle toggle_lg theme-switch"
+                for="switchDark"
+              >
+                <input
+                  type="checkbox"
+                  class="switchDarkMode theme-switch"
+                  id="switchDark"
+                  aria-describedby="switchDark"
+                />
+                <span class="handle"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================================
+      START STATUS CONNECTION
+    ==================================== -->
+    <div class="d-flex justify-content-center">
+      <div
+        class="toast status-connection"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </div>
+
+    <!-- JS FILES -->
+    <script src="assets/vendors/zuck_stories/zuck.min.js"></script>
+    <script src="assets/vendors/smoothscroll/smoothscroll.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/nouislider/wNumb.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
+    <script src="assets/js/pwa-services.js"></script>
+  </body>
+</html>
