@@ -528,6 +528,9 @@ progress {
     font-size: 4.5rem;
   }
 }
+    input::placeholder {
+    text-align: right;
+}
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
@@ -15522,7 +15525,7 @@ fieldset:disabled .btn {
 }
 .item-card-gradual .body-card .cover-nft .img-cover {
   width: 100%;
-  height: 180px;
+  height: 275px;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -15705,7 +15708,7 @@ fieldset:disabled .btn {
   color: #ff3838;
 }
 .btn-like-click.shape-box .count-likes {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .btn-like-click.shape-box .icon-inside {
   width: 40px;
@@ -16966,10 +16969,59 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
   font-size: 15px;
   font-weight: 500;
 }
+#submitSigninBtn[disabled],
+#submitSigninBtn[disabled]:hover {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+      }
+
+      #submitCreateBtn[disabled],
+      #submitCreateBtn[disabled]:hover {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+      }
+
+      #submitOtpBtn[disabled],
+      #submitOtpBtn[disabled]:hover {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+      }
+            #submitPasswordBtn[disabled],
+      #submitPasswordBtn[disabled]:hover {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+      }
+
+            #amountInput[type="number"]::-webkit-outer-spin-button,
+      #amountInput[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      #amountInput[type="number"] {
+        -moz-appearance: textfield;
+      }
+            #chargeBtn[disabled],
+      #chargeBtn[disabled]:hover {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+      }
+.pppat{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .modal .modal-body .content-alert-actions h2 {
   font-size: 14px;
   color: var(--dark);
   margin: 0;
+  text-align: center;
 }
 .modal .modal-body .content-alert-actions .action-links .btn {
   min-width: 120px;
@@ -20160,7 +20212,7 @@ header.default.header-light .un-block-right .menu-sidebar .btn svg rect {
   margin: 0;
 }
 .account-section .display-title p {
-  margin-top: 4px;
+  margin-top: 10px;
   font-size: 14px;
   color: var(--secondary);
   margin-bottom: 0;
@@ -20622,3 +20674,59 @@ hr {
 [data-theme="dark"] .form-group .form-control:focus {
   border-color: #565567 !important;
 } /*# sourceMappingURL=style.css.map */
+
+.plan-card{
+    background:#222032;
+    border:1px solid #2b2b2b;
+    border-radius:22px;
+    padding:35px;
+    color:#fff;
+    height:100%;
+    transition:.3s;
+    position:relative;
+}
+
+.plan-card:hover{
+    transform:translateY(-8px);
+    border-color:#395aff;
+    box-shadow:0 0 30px #395aff;
+}
+
+.plan-card.active{
+    border:2px solid #395aff;
+    box-shadow:0 0 40px #395aff;
+}
+
+.plan-card h2{
+    font-size:48px;
+    font-weight:700;
+    color:#fff;
+}
+
+.plan-card h2 span{
+    font-size:18px;
+    color:#888;
+}
+
+.plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+.plan-card li{
+    color:#bbb;
+    margin-bottom:14px;
+}
+
+.best{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#395aff;
+    color:#fff;
+    padding:7px 18px;
+    border-radius:50px;
+    font-size:13px;
+}

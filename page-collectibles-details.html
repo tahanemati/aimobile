@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="rtl">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,7 +20,7 @@
       content="#222032"
       media="(prefers-color-scheme: dark)"
     />
-    <title>پرامپتی فای</title>
+    <title> پرامپتیک </title>
     <meta name="description" content=" پرامپت  " />
     <meta name="keywords" content="" />
 
@@ -28,11 +28,9 @@
     <link
       rel="icon"
       type="image/png"
-      href="images/favicon/icon-32x32.png"
+      href="images/icons/icon32.png"
       sizes="32x32"
     />
-    <!-- IOS SUPPORT -->
-    <link rel="apple-touch-icon" href="images/favicon/icon-96x96.png" />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/remixicon.min.css" />
@@ -84,17 +82,8 @@
           <div class="head">
             <div class="cover-main-img">
               <picture>
-                <source
-                  srcset="
-                    https://promptall.ir/wp-content/uploads/elementor/thumbs/%DB%B2%DB%B7%DB%B7-copy-rbqtrk22t1w9ucdrf7sjp4fc9egc5obdvc5n8xq3wg.webp
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="img-full"
-                  src="https://promptall.ir/wp-content/uploads/elementor/thumbs/%DB%B2%DB%B7%DB%B7-copy-rbqtrk22t1w9ucdrf7sjp4fc9egc5obdvc5n8xq3wg.webp"
-                  alt=""
-                />
+                <source srcset="images/other/woman.webp" type="image/webp" />
+                <img class="img-full" src="images/other/woman.webp" alt="" />
               </picture>
             </div>
             <div
@@ -131,6 +120,9 @@
                 واضح بارگذاری کنید.
                 <br />
                 سپس روی دکمه "ساخت این تصویر" بزنید و نتیجه را دانلود کنید
+                <br />
+                چنانچه تصویر شما در دسته بندی "کاپلی " یا "دونفره" بود 2 الی چند
+                عکس آپلود کنید
               </p>
             </div>
             <div class="un-create-collectibles bg-white">
@@ -138,7 +130,7 @@
                 <h2>بارگذاری فایل</h2>
                 <p>فایل خود را برای بارگذاری انتخاب کنید</p>
                 <div class="upload-input-form">
-                  <input type="file" id="fileInput" />
+                  <input type="file" id="fileInput" multiple />
                   <div class="content-input" id="previewBox">
                     <div class="icon"><i class="ri-upload-cloud-line"></i></div>
                     <span> حداکثر حجم : 5 مگابایت </span>
@@ -200,6 +192,15 @@
                   </div>
                 </a>
               </div>
+
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#mdllBioDetails"
+                class="btn effect-click w-100 btn-md-size border border-solid border-snow color-text rounded-pill margin-t-10"
+              >
+                نیاز به آموزش دارید؟ کلیک کنید
+              </button>
             </div>
           </div>
         </section>
@@ -220,23 +221,23 @@
           <div class="modal-body pt-0">
             <div class="content-alert-actions">
               <div class="margin-b-20">
-                <h2>آیا با کسر مبلغ 7,000 تومان موافق هستید؟</h2>
+                <h2>آیا با کسر 1 اعتبار موافق هستید؟</h2>
               </div>
 
               <div class="action-links">
+                <a
+                  href="javascript: void(0)"
+                  class="btn bg-primary text-white rounded-pill col-12 margin-b-10"
+                >
+                  تایید
+                </a>
                 <button
                   type="button"
-                  class="btn border color-text rounded-pill margin-l-20 col-4"
+                  class="btn border color-text rounded-pill margin-l-20 col-12"
                   data-bs-dismiss="modal"
                 >
                   لغو
                 </button>
-                <a
-                  href="javascript: void(0)"
-                  class="btn bg-primary text-white rounded-pill col-6"
-                >
-                  تایید
-                </a>
               </div>
             </div>
           </div>
@@ -312,6 +313,67 @@
         aria-live="assertive"
         aria-atomic="true"
       ></div>
+    </div>
+
+    <div
+      class="modal transition-bottom screenFull defaultModal mdlladd__rate fade"
+      id="mdllBioDetails"
+      tabindex="-1"
+      aria-labelledby="modalBioDetails"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="icon-socialNetworks">
+              <a href="javascript: void(0)" class="btn btn-social">
+                <img src="images/avatar/player.png" alt="" />
+              </a>
+            </div>
+            <button
+              type="button"
+              class="btn btnClose"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-fill"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-upload-item">
+              <h2 class="size-16 weight-500 text-dark margin-b-10">توضیحات</h2>
+              <p>
+                توضیحات : ابتدا برای ساخت این تصویر تصویر صورت خود را به طور
+                واضح بارگذاری کنید. سپس روی دکمه "ساخت این تصویر" بزنید و نتیجه
+                را دانلود کنید چنانچه تصویر شما در دسته بندی "کاپلی " یا
+                "دونفره" بود 2 الی چند عکس آپلود کنید
+              </p>
+              <section class="un-page-components">
+                <div class="content-comp p-0">
+                  <div class="bg-white padding-20">
+                    <a class="item-card-nft rounded-15">
+                      <video
+                        autoplay
+                        muted
+                        playsinline
+                        loop
+                        class="cover-image pppat"
+                        src="images/other/help.mp4"
+                      >
+                        <source src="images/other/help.mp4" type="video/mp4" />
+                      </video>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <div class="env-pb"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- JS FILES -->

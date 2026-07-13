@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="rtl">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,7 +9,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="format-detection" content="telephone=no" />
-    <!-- <meta name="theme-color" content="#ffffff"> -->
     <meta
       name="theme-color"
       content="#ffffff"
@@ -20,19 +19,18 @@
       content="#222032"
       media="(prefers-color-scheme: dark)"
     />
-    <title>پرامپتی فای</title>
-    <meta name="description" content=" پرامپت  " />
+    <title>پرامپتیک | تایید کد</title>
+    <meta name="description" content=" پرامپتیک  " />
     <meta name="keywords" content="" />
 
     <!-- FAVICON -->
     <link
       rel="icon"
       type="image/png"
-      href="images/favicon/icon-32x32.png"
+      href="images/icons/icon32.png"
       sizes="32x32"
     />
-    <!-- IOS SUPPORT -->
-    <link rel="apple-touch-icon" href="images/favicon/icon-96x96.png" />
+
     <!-- CSS FILES -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/remixicon.min.css" />
@@ -55,14 +53,6 @@
         <!-- ===================================
               START THE HEADER
             ==================================== -->
-        <header class="default heade-sticky">
-          <div class="un-title-page go-back">
-            <a href="javascript:history.back()" class="icon">
-              <i class="ri-arrow-drop-right-line"></i>
-            </a>
-            <h1></h1>
-          </div>
-        </header>
         <!-- ===================================
               START THE SPACE STICKY
             ==================================== -->
@@ -70,7 +60,7 @@
         <!-- ===================================
               START THE FORM
             ==================================== -->
-        <section class="account-section padding-20">
+        <section class="account-section padding-20 container">
           <div class="display-title">
             <h1>حساب خود را فعال کنید!</h1>
             <p>
@@ -87,35 +77,35 @@
                     maxlength="1"
                     pattern="[0-9]"
                     class="form-control"
-                    placeholder="-"
+                    placeholder=""
                   />
                   <input
                     type="tel"
                     maxlength="1"
                     pattern="[0-9]"
                     class="form-control"
-                    placeholder="-"
+                    placeholder=""
                   />
                   <input
                     type="tel"
                     maxlength="1"
                     pattern="[0-9]"
                     class="form-control"
-                    placeholder="-"
+                    placeholder=""
                   />
                   <input
                     type="tel"
                     maxlength="1"
                     pattern="[0-9]"
                     class="form-control"
-                    placeholder="-"
+                    placeholder=""
                   />
                   <input
                     type="tel"
                     maxlength="1"
                     pattern="[0-9]"
                     class="form-control"
-                    placeholder="-"
+                    placeholder=""
                   />
                 </div>
               </div>
@@ -125,6 +115,28 @@
             </form>
           </div>
         </section>
+        <footer class="footer-account">
+          <div class="env-pb">
+            <div class="display-actions container">
+              <a
+                href="index.html"
+                id="submitOtpBtn"
+                class="btn btn-sm-arrow bg-primary col-12"
+                disabled
+              >
+                <p> ورود به حساب کاربری </p>
+                <div class="ico"><i class="ri-arrow-drop-left-line"></i></div>
+              </a>
+            </div>
+            <div class="dividar"></div>
+            <div class="support">
+              <p>
+                نیاز به کمک دارید؟
+                <a href="page-help.html">با تیم پشتیبانی ما تماس بگیرید</a>
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -150,117 +162,6 @@
     <script src="assets/js/custom.js"></script>
     <!-- PWA APP SERVICE REGISTRATION AND WORKS JS -->
     <script src="assets/js/pwa-services.js"></script>
-
-    <script>
-      var timeleft = 60;
-      var downloadTimer = setInterval(function () {
-        if (timeleft <= 0) {
-          clearInterval(downloadTimer);
-          document.getElementById("countdown").innerHTML =
-            "<button typy='button' class='btn btn-resend'>ارسال مجدد کد</button>";
-        } else {
-          document.getElementById("countdown").innerHTML =
-            "زمان باقی مانده " + timeleft + " ثانیه";
-        }
-        timeleft -= 1;
-        /*console.log(downloadTimer);*/
-      }, 1000);
-
-      /*==================================
-          START VERIFICATIOS CODE INPUT
-        ==================================*/
-
-      const form = document.querySelector(".form-verification-code");
-      const inputs = form.querySelectorAll("input");
-      const KEYBOARDS = {
-        backspace: 8,
-        arrowLeft: 37,
-        arrowRight: 39,
-      };
-
-      function handleInput(e) {
-        const input = e.target;
-        const nextInput = input.nextElementSibling;
-        if (nextInput && input.value) {
-          nextInput.focus();
-          if (nextInput.value) {
-            nextInput.select();
-          }
-        }
-      }
-
-      function handlePaste(e) {
-        e.preventDefault();
-        const paste = e.clipboardData.getData("text");
-        inputs.forEach((input, i) => {
-          input.value = paste[i] || "";
-        });
-      }
-
-      function handleBackspace(e) {
-        const input = e.target;
-        if (input.value) {
-          input.value = "";
-          return;
-        }
-
-        input.previousElementSibling.focus();
-      }
-
-      function handleArrowLeft(e) {
-        const previousInput = e.target.previousElementSibling;
-        if (!previousInput) return;
-        previousInput.focus();
-      }
-
-      function handleArrowRight(e) {
-        const nextInput = e.target.nextElementSibling;
-        if (!nextInput) return;
-        nextInput.focus();
-      }
-
-      form.addEventListener("input", handleInput);
-      inputs[0].addEventListener("paste", handlePaste);
-
-      inputs.forEach((input) => {
-        input.addEventListener("focus", (e) => {
-          setTimeout(() => {
-            e.target.select();
-          }, 0);
-        });
-
-        input.addEventListener("keydown", (e) => {
-          switch (e.keyCode) {
-            case KEYBOARDS.backspace:
-              handleBackspace(e);
-              break;
-            case KEYBOARDS.arrowLeft:
-              handleArrowLeft(e);
-              break;
-            case KEYBOARDS.arrowRight:
-              handleArrowRight(e);
-              break;
-            default:
-          }
-        });
-      });
-      const input = document.querySelectorAll(".input_group input");
-
-      inputs.forEach((input, idx) => {
-        input.addEventListener("input", () => {
-          // فقط وقتی کاراکتر وارد شد به input بعدی برو
-          if (input.value.length === 1 && idx < input.length - 1) {
-            inputs[idx + 1].focus();
-          }
-        });
-
-        input.addEventListener("keydown", (e) => {
-          // اگر Backspace زده شد و خالی شد، به input قبلی برو
-          if (e.key === "Backspace" && input.value === "" && idx > 0) {
-            inputs[idx - 1].focus();
-          }
-        });
-      });
-    </script>
+    <script src="assets/js/timer.js"></script>
   </body>
 </html>
